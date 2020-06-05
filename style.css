@@ -31,11 +31,20 @@ body {
   align-items: center;
 }
 
-.carousel-cell img {
+.carousel-cell-image {
   display: block;
   height: 100%;
   width: 100%;
   margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
 }
 
 @media screen and (max-width: 500px) {
