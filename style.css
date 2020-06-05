@@ -1,0 +1,48 @@
+/* external css: flickity.css */
+
+/* Page Styles */
+html {
+  font-size: 1.125em;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  color: maroon;
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: calc(100vh - 150px);
+  margin-right: 10px;
+  background: #592727;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-cell {
+    width: 100%;
+  }
+  .flickity-page-dots {
+    display: none;
+  }
+}
