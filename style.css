@@ -14,6 +14,7 @@ body {
 }
 
 .title {
+  padding: 0 10%;
   text-align: center;
   color: maroon;
 }
@@ -47,13 +48,15 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 800px) {
+  .flickity-page-dots {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .carousel-cell {
     width: 100%;
     height: unset;
-  }
-
-  .flickity-page-dots {
-    display: none;
   }
 }
